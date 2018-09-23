@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "717709657682",
+    "firebase_url": "https://messagingapp-1ad10.firebaseio.com",
+    "project_id": "messagingapp-1ad10",
+    "storage_bucket": "messagingapp-1ad10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717709657682:android:a5cca3d43f58f3ef",
+        "android_client_info": {
+          "package_name": "com.mukundmurarka.messagingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717709657682-0kjuuhhnn3thtu4ircvrnvm4ukhjd9vi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mukundmurarka.messagingapp",
+            "certificate_hash": "77afa2fa79e0f116eacfc141ebbb3e73c4ebe824"
+          }
+        },
+        {
+          "client_id": "717709657682-6te9apmql88ggpl0f6gaqtg0mffdfl58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhqYQkOpOCkna711DMjCH1Z0tJsZtwidE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717709657682-6te9apmql88ggpl0f6gaqtg0mffdfl58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
