@@ -1,36 +1,66 @@
 package com.mukundmurarka.messagingapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.widget.Toolbar;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    private com.google.firebase.auth.FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
+
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mAuth = com.google.firebase.auth.FirebaseAuth.getInstance();
+
+
+        mAuth = FirebaseAuth.getInstance();
+
+
+
+         toolbar= findViewById(R.id.tool);
+       setSupportActionBar(toolbar);
+
+
         }
-        @Override
+
+    private void setSupportActionBar(Toolbar toolbar) {
+        getSupportActionBar().setTitle("ChatApp");
+    }
+
+
+    @Override
 public void onStart() {
     super.onStart();
     // Check if user is signed in (non-null) and update UI accordingly.
-    com.google.firebase.auth.FirebaseUser currentUser = mAuth.getCurrentUser();
+        FirebaseUser currentUser=mAuth.getCurrentUser();
    if(currentUser==null){
-       android.content.Intent intent=new android.content.Intent(MainActivity.this,StartActivity.class);
+       Intent intent=new Intent(MainActivity.this,StartActivity.class);
            startActivity(intent);
-
-
-
-}else{
-
-
+           finish();
+}
 
 }
 
 
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//         super.onCreateOptionsMenu(menu);
+//
+//         getMenuInflater().inflate(R.menu.main_menu,menu);
+//
+//
+//
+//
+//        return true;
+//    }
+//     private void setSupportActionBar(Toolbar toolbar) {
+//      }
 }
-
-    }
 
