@@ -42,7 +42,7 @@
             android:layout_marginTop="36dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            tools:text="Name" />
 
         <EditText
             android:id="@+id/editText3"
@@ -54,6 +54,6 @@
             android:layout_marginTop="121dp"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="enter email" />
+            tools:text="enter email" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
